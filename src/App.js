@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+// import { Route, Redirect, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+import Home from './components/Main/Home';
+import Navbar from './components/UI/Navbar';
+import About from './components/Main/About';
+import Work from './components/Main/Work';
+import { useState, useEffect } from 'react';
+import Logo from './assets/Logo.gif';
 
 function App() {
+  const [showLogo, setShowLogo] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowLogo(false);
+    }, 1000);
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section>
+        <img src={Logo} alt="logo" className={showLogo ? 'show' : 'hide'} />
+      </section>
+      <Navbar />
+      <Home />
+      <About />
+      <Work />
     </div>
   );
 }

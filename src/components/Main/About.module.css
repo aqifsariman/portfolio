@@ -1,0 +1,36 @@
+.main {
+  width: 90%;
+  border: white;
+  margin: auto;
+  padding-top: 20%;
+  padding-bottom: 35%;
+  transition: opacity 1500ms ease-in-out;
+}
+.notLoaded {
+  opacity: 0;
+}
+
+.main header {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.main p {
+  font-size: 20px;
+  color: white;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .main p {
+    font-size: 15px;
+  }
+  .main {
+    padding-left: 0% !important;
+    padding-bottom: 60% !important;
+    padding-top: 40% !important;
+  }
+}

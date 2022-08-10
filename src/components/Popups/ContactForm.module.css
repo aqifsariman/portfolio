@@ -1,0 +1,42 @@
+.header{
+    color: white;
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border: none;
+    background: transparent;
+}
+
+.form input{
+    width:50%;
+    border:none;
+    background-color: black;
+    color:white;
+    margin-bottom: 20px;
+}
+.form textarea{
+    width:50%;
+    border:none;
+    background-color: black;
+    color:white;
+    margin-bottom: 20px;
+}
+
+.form button{
+    width:10%;
+    color:white;
+    background: transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+.form button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  transition: opacity 800ms ease-in-out;
+  opacity: 1;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 5rem;
+}
+
+.navbar li {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+  font-size: 18px;
+  transition: font-size 500ms ease-in-out;
+}
+
+.navbar li:hover {
+  font-size: 25px;
+  cursor: pointer;
+  transition: font-size 500ms;
+}
+.navbar li:focus {
+  font-size: 25px;
+  cursor: pointer;
+  transition: font-size 500ms ease-in-out;
+}
+
+.fade-out {
+  opacity: 0.1;
+  transition: opacity 800ms ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
