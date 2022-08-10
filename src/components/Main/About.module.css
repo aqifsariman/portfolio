@@ -24,6 +24,12 @@
   margin-bottom: 20px;
 }
 
+.button-group {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 @media screen and (max-width: 500px) {
   .main p {
     font-size: 15px;

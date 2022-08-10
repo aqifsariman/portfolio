@@ -2,6 +2,7 @@ import styles from './Navbar.module.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
+import pdf from '../../assets/Resume.pdf';
 const Navbar = () => {
   const [show, setShow] = useState(true);
   const [topOfPage, setTopOfPage] = useState(0);
@@ -47,6 +48,9 @@ const Navbar = () => {
             </HashLink>
           </li>
         </ul>
+        <button className={styles.resume}>
+          <a href={pdf}> Resume</a>
+        </button>
       </nav>
     </header>
   );
