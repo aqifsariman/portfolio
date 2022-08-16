@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './Home.module.css';
-import Headshot from '../../assets/Headshot.jpg';
+import Headshot from '../../assets/headshot.jpg';
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
