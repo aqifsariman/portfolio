@@ -59,6 +59,13 @@ a {
   position: absolute;
   right: 45px;
   top: 10px;
+  transition: padding 500ms ease-in-out;
+}
+
+.resume:hover {
+  padding: 25px;
+  font-size: 20px;
+  transition: padding 500ms ease-in-out;
 }
 
 @media screen and (max-width: 500px) {
